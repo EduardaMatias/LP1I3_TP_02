@@ -15,8 +15,20 @@ public class TP02Ex09 {
 		
 		System.out.print("Digite o número de linhas: ");
 		i = scan.nextInt();
+		
+		if(i > 10) {
+			System.out.println("Digite um valor válido! \n....Fechando o programa");
+			System.exit(0);
+		}
+		
 		System.out.print("Digite o número de colunas: ");
 		j = scan.nextInt();
+		
+		if(j > 10) {
+			System.out.println("Digite um valor válido! \n....Fechando o programa");
+			System.exit(0);
+
+		}
 		
 		System.out.println("==============================");
 		
