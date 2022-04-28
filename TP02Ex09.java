@@ -13,12 +13,13 @@ public class TP02Ex09 {
 	
 		int i, j, linhas, colunas, c = 0;
 		
-		System.out.println("Digite o número de linhas: ");
+		System.out.print("Digite o número de linhas: ");
 		i = scan.nextInt();
-		System.out.println("Digite o número de colunas: ");
+		System.out.print("Digite o número de colunas: ");
 		j = scan.nextInt();
 		
-		System.out.println(i);
+		System.out.println("==============================");
+		
 		int valores[][] = new int [i][j];
 		
 		for(linhas = 0; linhas < i; linhas++) {
@@ -29,10 +30,20 @@ public class TP02Ex09 {
 			}
 		}
 		
+		System.out.println("========== Matriz ==========");
 		for (linhas = 0; linhas < i; linhas++) {
 			for (colunas = 0; colunas < j; colunas++) {
 				System.out.print(valores[linhas][colunas] + " | ");
 			}
+			System.out.println(" ");
+		}
+		
+		System.out.println("========== Matriz transposta ==========");
+		for (colunas = 0; colunas < j; colunas++) {
+			for (linhas= 0; linhas < i; linhas++) {
+				System.out.print(valores[linhas][colunas] + " | ");
+			}
+			System.out.println(" ");
 		}
 		
 		scan.close();
