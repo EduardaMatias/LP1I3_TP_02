@@ -31,6 +31,7 @@ public class TP02Ex07 {
 			for (j = 0; j < 4; j++) {
 				System.out.print(valores[i][j] + " | ");
 			}
+			System.out.println(" ");
 		}
 		
 		scan.close();

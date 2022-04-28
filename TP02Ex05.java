@@ -22,8 +22,9 @@ public class TP02Ex05 {
 		
 		for (i = 0; i < 3; i++) {
 			for (j = 0; j < 2; j++) {
-				System.out.print(valores[i][j] + " | ");
+				System.out.print("|" + valores[i][j] + "|");
 			}
+			System.out.println(" ");
 		}
 
 		scan.close();
